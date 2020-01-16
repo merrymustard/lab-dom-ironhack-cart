@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css">
   <title>Ironhack cart</title>
 </head>
-
 <body>
   <h1>Ironhack Cart</h1>
 
@@ -25,61 +23,62 @@
         <td class="name">
           <span>IronBubble-head</span>
         </td>
-
+    
         <td class="pu">
           $<span>25.00</span>
         </td>
-
+    
         <td class="qty">
           <label>
             <input type="number" value="0" min="0">
           </label>
         </td>
-
+    
         <td class="subtot">
           $<span>0</span>
         </td>
-
+    
         <td class="rm">
-          <button class="btn btn-delete">Delete</button>
+          <button class="btn btn-delete" onclick="deleteRow(0)">Delete</button>
         </td>
       </tr>
       <tr class="product">
         <td class="name">
-          <span>Iron pumpkin spice latte</span>
+          <span>Iron T-Shirt</span>
         </td>
-
+    
         <td class="pu">
-          $<span>10.00</span>
+          $<span>25.00</span>
         </td>
-
+    
         <td class="qty">
           <label>
             <input type="number" value="0" min="0">
           </label>
         </td>
-
+    
         <td class="subtot">
           $<span>0</span>
         </td>
-
+    
         <td class="rm">
-          <button class="btn btn-delete">Delete</button>
+          <button class="btn btn-delete" onclick="deleteRow(1)">Delete</button>
         </td>
       </tr>
     </tbody>
+    
     <tfoot>
       <tr class="new">
         <td>
-          <input type="text" id="inputName" />
+          <input type="text"/>
         </td>
         <td>
-          <input type="number" min="0" id="inputPrice" />
+          <input type="number" min="0"/>
         </td>
         <td></td>
         <td></td>
         <td>
-          <button id="create" class="btn">Create</button>
+          <button id="create" class="btn" onclick="createItem()">Create</button>
         </td>
       </tr>
     </tfoot>
@@ -94,5 +93,4 @@
 
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
-
 </html>
